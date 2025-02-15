@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>working with images</title>
+</head>
+<body>
+    <h1> Working with images</h1>
+
+    <h2> Orientation based responsive images</h2>
+    <picture>
+        <source media="(orientation:portrait)" srcset="imagess/calgary-tower-portrait.webp">
+        <img src="imagess/calgary-tower-landscape.webp" alt="the observation deck of the calgary tower against an afternoon blue sky" title="the observation deck of the calgary tower against an afternoon blue sky" loading="lazy">
+    </picture>
+
+    <h2> Responsive images- desktop First</h2>
+    <picture>
+        <source media="(max-width:450px)" srcset="imagess/small.png">
+        <source media="(max-width:650px)" srcset="imagess/medium.png">
+        <img src="imagess/large.png" alt="Banner" loading="lazy">
+    </picture>
+    <h2>Responsive Images - Mobile First</h2>
+    <picture>
+        <source media="(min-width:1000px)" srcset="imagess/sunglasses-full.webp">
+        <source media="(min-width:650px)" srcset="imagess/sunglasses-med.webp">
+        <img src="imagess/sunglasses-small.webp" alt="Black glasses sitting on sand on a beach">
+    </picture>
+    
+</body>
+</html>
